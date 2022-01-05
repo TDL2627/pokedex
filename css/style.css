@@ -31,30 +31,16 @@ ul{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-/* charmander */
-#card{
-    border: 5px groove black ;
-    width:300px;
-    margin:15px;
-    background-color: rgb(248, 173, 12);
-    text-align: center;
-}
-/* charmeleon */
-#card1{
+
+
+#card1,#card3,#card,#card4,#card2,#card5{
     border: 5px groove black;
     width:300px;
     margin:15px;
     background-color: rgb(248, 173, 12);
     text-align: center;
 }
-/* charizard */
-#card2{
-    border: 5px groove black;
-    width:300px;
-    margin:15px;
-    background-color:rgb(248, 173, 12);
-    text-align: center;
-}
+
 
 #cardz{
     display: flex;

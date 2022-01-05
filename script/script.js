@@ -89,3 +89,94 @@ fetch('https://pokeapi.co/api/v2/pokemon/6').then(result =>{
 }).catch(err => {
     console.log(err)
 })
+
+fetch('https://pokeapi.co/api/v2/pokemon/1').then(res =>{
+    return res.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector("#card3").innerHTML= `
+   
+        <h1>${ data.name }</h1>
+        <div class="card-pic">
+        <img class="pkmnPic" src="${ data.sprites.front_default }">
+        </div>
+        <div class="info">
+        
+        <p class="fire">${ data.types[0].type.name }</p>
+         
+        
+        <h3>Moves</h3>
+        <ul>
+        <li>${ data.moves[3].move.name }</li>
+        <li>${ data.moves[21].move.name }</li>
+        <li>${ data.moves[7].move.name }</li>
+        <li>${ data.moves[8].move.name }</li>
+        </ul>
+        <br>
+       </div>
+    `
+
+}).catch(err => {
+    console.log(err)
+})
+
+
+fetch('https://pokeapi.co/api/v2/pokemon/2').then(res =>{
+    return res.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector("#card4").innerHTML= `
+   
+        <h1>${ data.name }</h1>
+        <div class="card-pic">
+        <img class="pkmnPic" src="${ data.sprites.front_default }">
+        </div>
+        <div class="info">
+        
+        <p class="fire">${ data.types[0].type.name }</p>
+         
+        
+        <h3>Moves</h3>
+        <ul>
+        <li>${ data.moves[3].move.name }</li>
+        <li>${ data.moves[21].move.name }</li>
+        <li>${ data.moves[7].move.name }</li>
+        <li>${ data.moves[8].move.name }</li>
+        </ul>
+        <br>
+       </div>
+    `
+
+}).catch(err => {
+    console.log(err)
+})
+
+fetch('https://pokeapi.co/api/v2/pokemon/3').then(res =>{
+    return res.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector("#card5").innerHTML= `
+   
+        <h1>${ data.name }</h1>
+        <div class="card-pic">
+        <img class="pkmnPic" src="${ data.sprites.front_default }">
+        </div>
+        <div class="info">
+        
+        <p class="fire">${ data.types[0].type.name }</p>
+         
+        
+        <h3>Moves</h3>
+        <ul>
+        <li>${ data.moves[3].move.name }</li>
+        <li>${ data.moves[21].move.name }</li>
+        <li>${ data.moves[7].move.name }</li>
+        <li>${ data.moves[8].move.name }</li>
+        </ul>
+        <br>
+       </div>
+    `
+
+}).catch(err => {
+    console.log(err)
+})
