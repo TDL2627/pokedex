@@ -97,12 +97,12 @@ fetch('https://pokeapi.co/api/v2/pokemon/1').then(res =>{
     document.querySelector("#card3").innerHTML= `
    
         <h1>${ data.name }</h1>
-        <div class="card-pic">
+        <div class="card-pic2">
         <img class="pkmnPic" src="${ data.sprites.front_default }">
         </div>
         <div class="info">
         
-        <p class="fire">${ data.types[0].type.name }</p>
+        <p class="grass">${ data.types[0].type.name }</p>
          
         
         <h3>Moves</h3>
@@ -128,12 +128,12 @@ fetch('https://pokeapi.co/api/v2/pokemon/2').then(res =>{
     document.querySelector("#card4").innerHTML= `
    
         <h1>${ data.name }</h1>
-        <div class="card-pic">
+        <div class="card-pic2">
         <img class="pkmnPic" src="${ data.sprites.front_default }">
         </div>
         <div class="info">
         
-        <p class="fire">${ data.types[0].type.name }</p>
+        <p class="grass">${ data.types[0].type.name }</p>
          
         
         <h3>Moves</h3>
@@ -158,12 +158,103 @@ fetch('https://pokeapi.co/api/v2/pokemon/3').then(res =>{
     document.querySelector("#card5").innerHTML= `
    
         <h1>${ data.name }</h1>
-        <div class="card-pic">
+        <div class="card-pic2">
         <img class="pkmnPic" src="${ data.sprites.front_default }">
         </div>
         <div class="info">
         
-        <p class="fire">${ data.types[0].type.name }</p>
+        <p class="grass">${ data.types[0].type.name }</p>
+         
+        
+        <h3>Moves</h3>
+        <ul>
+        <li>${ data.moves[3].move.name }</li>
+        <li>${ data.moves[21].move.name }</li>
+        <li>${ data.moves[7].move.name }</li>
+        <li>${ data.moves[8].move.name }</li>
+        </ul>
+        <br>
+       </div>
+    `
+
+}).catch(err => {
+    console.log(err)
+})
+
+
+fetch('https://pokeapi.co/api/v2/pokemon/7').then(res =>{
+    return res.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector("#card6").innerHTML= `
+   
+        <h1>${ data.name }</h1>
+        <div class="card-pic1">
+        <img class="pkmnPic" src="${ data.sprites.front_default }">
+        </div>
+        <div class="info">
+        
+        <p class="water">${ data.types[0].type.name }</p>
+         
+        
+        <h3>Moves</h3>
+        <ul>
+        <li>${ data.moves[3].move.name }</li>
+        <li>${ data.moves[21].move.name }</li>
+        <li>${ data.moves[7].move.name }</li>
+        <li>${ data.moves[8].move.name }</li>
+        </ul>
+        <br>
+       </div>
+    `
+
+}).catch(err => {
+    console.log(err)
+})
+
+fetch('https://pokeapi.co/api/v2/pokemon/8').then(res =>{
+    return res.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector("#card7").innerHTML= `
+   
+        <h1>${ data.name }</h1>
+        <div class="card-pic1">
+        <img class="pkmnPic" src="${ data.sprites.front_default }">
+        </div>
+        <div class="info">
+        
+        <p class="water">${ data.types[0].type.name }</p>
+         
+        
+        <h3>Moves</h3>
+        <ul>
+        <li>${ data.moves[3].move.name }</li>
+        <li>${ data.moves[21].move.name }</li>
+        <li>${ data.moves[7].move.name }</li>
+        <li>${ data.moves[8].move.name }</li>
+        </ul>
+        <br>
+       </div>
+    `
+
+}).catch(err => {
+    console.log(err)
+})
+
+fetch('https://pokeapi.co/api/v2/pokemon/9').then(res =>{
+    return res.json();
+}).then(data => {
+    console.log(data);
+    document.querySelector("#card8").innerHTML= `
+   
+        <h1>${ data.name }</h1>
+        <div class="card-pic1">
+        <img class="pkmnPic" src="${ data.sprites.front_default }">
+        </div>
+        <div class="info">
+        
+        <p class="water">${ data.types[0].type.name }</p>
          
         
         <h3>Moves</h3>
