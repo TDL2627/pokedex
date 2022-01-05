@@ -45,9 +45,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/5').then(resu =>{
         <img src="${ data1.sprites.front_shiny }">
         <img src="${ data1.sprites.back_shiny }">
         </div>
-        <h3>Ability<h3>
+        <h3>Type<h3>
         
-            <p>${ data1.abilities[0].ability.name }</p>
+            <p>${ data1.types[0].type.name }</p>
          
         
         <h3>MOVES</h3>
