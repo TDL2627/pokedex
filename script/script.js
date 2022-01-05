@@ -8,9 +8,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/4').then(res =>{
         <div class="card-pic">
         <img class="pkmnPic" src="${ data.sprites.front_default }">
         </div>
-        <h3>Type<h3>
+        <div class="info">
         
-        <p>${ data.types[0].type.name }</p>
+        <p class="fire">${ data.types[0].type.name }</p>
          
         
         <h3>Moves</h3>
@@ -21,7 +21,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/4').then(res =>{
         <li>${ data.moves[8].move.name }</li>
         </ul>
         <br>
-
+       </div>
     `
 
 }).catch(err => {
@@ -38,9 +38,9 @@ fetch('https://pokeapi.co/api/v2/pokemon/5').then(resu =>{
         <div class="card-pic">
         <img class="pkmnPic" src="${ data1.sprites.front_default }">
         </div>
-        <h3>Type<h3>
+        <div class="info">
         
-            <p>${ data1.types[0].type.name }</p>
+            <p class="fire">${ data1.types[0].type.name }</p>
          
         
         <h3>Moves</h3>
@@ -51,7 +51,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/5').then(resu =>{
         <li>${ data1.moves[17].move.name }</li>
         </ul>
         <br>
-
+</div>
     `
 
 }).catch(err => {
@@ -69,11 +69,11 @@ fetch('https://pokeapi.co/api/v2/pokemon/6').then(result =>{
         <div class="card-pic">
         <img class="pkmnPic" src="${ data2.sprites.front_default }">
         </div>
-        <h3>Type<h3>
-        
-        <p>${ data2.types[0].type.name } / ${ data2.types[1].type.name }</p>
-        <p></p>
-         
+        <div class="info">
+        <div class="type2">
+        <p class="fire1">${ data2.types[0].type.name } </p>
+        <p class="fly">${ data2.types[1].type.name }</p>
+         </div>
         
         <h3>Moves</h3>
         <ul>
@@ -83,7 +83,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/6').then(result =>{
         <li>${ data2.moves[8].move.name }</li>
         </ul>
         <br>
-
+</div>
     `
 
 }).catch(err => {

@@ -5,26 +5,54 @@ ul{
     list-style-type: none;
     text-transform:capitalize;
 }
-
+.fire{
+    background-color: red;
+    border-radius: 25px;
+    width: 150px;
+   margin-left: 70px;
+}
+.fire1{
+    background-color: red;
+    border-radius: 25px;
+    width: 150px;
+ 
+}
+.fly{
+    background-color: rgb(161, 236, 229);
+    border-radius: 25px;
+    width: 150px;
+}
+.info{
+    background-color: rgb(248, 173, 12);
+}
+.type2{
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* charmander */
 #card{
     border: 5px groove black ;
     width:300px;
     margin:15px;
-    background-color: rgb(255, 196, 3);
+    background-color: rgb(248, 173, 12);
     text-align: center;
 }
+/* charmeleon */
 #card1{
     border: 5px groove black;
     width:300px;
     margin:15px;
-    background-color: rgb(255, 196, 3);
+    background-color: rgb(248, 173, 12);
     text-align: center;
 }
+/* charizard */
 #card2{
     border: 5px groove black;
     width:300px;
     margin:15px;
-    background-color:rgb(255, 196, 3);
+    background-color:rgb(248, 173, 12);
     text-align: center;
 }
 
@@ -53,33 +81,38 @@ p{
 
 
 
+/* for mobile */
 @media only screen and (max-width: 600px) {
   
     #cardz{
         display: inline;
         text-align: center;
+        
        
     }
 
     #card{
         border: 5px groove black ;
-        width:150px;
+        width:200px;
         margin:15px;
-        background-color: rgb(255, 196, 3);
+        margin-left: 60px;
+        background-color: rgb(248, 173, 12);
         text-align: center;
     }
     #card1{
         border: 5px groove black;
-        width:150px;
+        width:200px;
         margin:15px;
-        background-color: rgb(255, 196, 3);
+        margin-left: 60px;
+        background-color: rgb(248, 173, 12);
         text-align: center;
     }
     #card2{
         border: 5px groove black;
-        width:150px;
+        width:200px;
         margin:15px;
-        background-color:rgb(255, 196, 3);
+        margin-left: 60px;
+        background-color:rgb(248, 173, 12);
         text-align: center;
     }
     .pkmnPic{
