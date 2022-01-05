@@ -2,17 +2,20 @@ body{
     text-align: center;
 }
 ul{
-    text-decoration: none;
+    list-style-type: none;
 }
 li{
     text-decoration: none;
 }
 #card{
     border: 5px groove gold;
+    border-radius: 50%;
 }
 #card1{
     border: 5px groove red;
+    border-radius: 50%;
 }
 #card2{
     border: 5px groove green;
+    border-radius: 50%;
 }
