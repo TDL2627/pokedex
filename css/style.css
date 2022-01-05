@@ -50,3 +50,39 @@ h1{
 p{
     text-transform:capitalize;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  
+    #cardz{
+        display: inline;
+        text-align: center;
+       
+    }
+
+    #card{
+        border: 5px groove black ;
+        width:150px;
+        margin:15px;
+        background-color: rgb(255, 196, 3);
+        text-align: center;
+    }
+    #card1{
+        border: 5px groove black;
+        width:150px;
+        margin:15px;
+        background-color: rgb(255, 196, 3);
+        text-align: center;
+    }
+    #card2{
+        border: 5px groove black;
+        width:150px;
+        margin:15px;
+        background-color:rgb(255, 196, 3);
+        text-align: center;
+    }
+    .pkmnPic{
+        height: 100px;
+    }
+  }
